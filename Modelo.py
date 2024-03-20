@@ -1,3 +1,5 @@
+cuentaClientes = []
+
 class Cuenta:
     def __init__(self, numero_cuenta, documento_identidad, nombre_cliente, saldo):     
         self.numero_cuenta = numero_cuenta
@@ -24,8 +26,6 @@ class Cuenta:
         print("Documemto de identidad del cliente:", self.documento_identidad)
         print("Nombre del cliente:", self.nombre_cliente)
         print("Saldo actual:", self.saldo)
-
-cuentaClientes = []
 
 def crear_cuenta(numero_cuenta, documento_identidad, nombre_cliente, saldo):
         documento_identidad = int(input("Por favor ingrese el documento de identidad: "))
